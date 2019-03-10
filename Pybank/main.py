@@ -2,7 +2,7 @@ import csv
 import os
 from statistics import mean
 
-file = os.path.join('..', '..', 'Downloads','budget.csv')
+file = os.path.join('..','Resources','budget.csv')
 change = []
 months = []
 previous = 0
