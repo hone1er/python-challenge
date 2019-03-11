@@ -3,7 +3,7 @@ import os
 import operator
 
 
-data = os.path.join('..', 'Resources', 'election_data.csv')
+data = os.path.join(os.path.dirname(__file__),'..', 'Resources', 'election_data.csv')
 vote_count = 0
 # list of candidates. If a name is added to the csv, add it to this list.
 candidates = ['Khan', 'Correy', 'Li', "O'Tooley"] 
