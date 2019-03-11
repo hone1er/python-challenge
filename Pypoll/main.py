@@ -31,8 +31,7 @@ Total Votes: {format(vote_count, ',d')}
 {table}
 -------------------------
 Winner: {winner}
--------------------------
-"""
+-------------------------"""
 print(info)
 with open('final_results.txt', 'w') as final:
     final.write(info)
