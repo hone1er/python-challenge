@@ -5,7 +5,7 @@ import operator
 data = os.path.join('..', 'Resources', 'election_data.csv')
 vote_count = 0
 # list of candidates(using this method allows you to add a name to the list of candidates)
-candidates = ['Khan', 'Correy', 'Li', "O'Tooley", 'Danny', 'Andy', 'Joe'] 
+candidates = ['Khan', 'Correy', 'Li', "O'Tooley"] 
 # dictionary to store candidate: vote_count
 votes = {}
 # dictionary to store candidate: vote percentage
