@@ -16,14 +16,8 @@ with open(data, 'r') as csvfile:
     header = next(csvfile)
     for row in csvreader:
         vote_count +=1
-        if row[2] == 'Khan':
-            votes['Khan'] += 1
-        elif row[2] == 'Correy':
-            votes['Correy'] +=1
-        elif row[2] == 'Li':
-            votes['Li'] += 1
-        elif row[2] == "O'Tooley":
-            votes["O'Tooley"] +=1
+        if row[2] in votes:
+            votes[row[2]] += 1
 percents = {
     'Khan': (votes['Khan']/vote_count)*100,
     'Correy': (votes['Correy']/vote_count)*100,
@@ -37,7 +31,7 @@ Election Results
 -------------------------
 Total Votes: {format(vote_count, ',d')}
 -------------------------
-Khan: {round(percents['Khan'],4)}% ({format(votes['Khan'], ',d')})
+Khan: {round(percents['Khan'],3)}% ({format(votes['Khan'], ',d')})
 Correy: {round(percents['Correy'],3)}% ({format(votes['Correy'], ',d')})
 Li: {round(percents['Li'],3)}% ({format(votes['Li'], ',d')})
 O'Tooley: {round(percents["O'Tooley"],3)}% ({format(votes["O'Tooley"], ',d')})
