@@ -33,5 +33,5 @@ Total Votes: {format(vote_count, ',d')}
 Winner: {winner}
 -------------------------"""
 print(info)
-with open('final_results.txt', 'w') as final:
+with open('poll_results.txt', 'w') as final:
     final.write(info)
