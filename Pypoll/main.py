@@ -35,6 +35,7 @@ Election Results
 Total Votes: {format(vote_count, ',d')}
 -------------------------
 {table}
+
 -------------------------
 Winner: {winner}
 -------------------------
