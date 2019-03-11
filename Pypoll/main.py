@@ -1,7 +1,7 @@
 import csv
 import os
 import operator
-import timeit
+
 
 data = os.path.join('..', 'Resources', 'election_data.csv')
 vote_count = 0
